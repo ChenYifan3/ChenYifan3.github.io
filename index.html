@@ -1,16 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-    <meta charset="utf-8">
-    <title>我的博客</title>
+    <meta charset="UTF-8">
+    <title>我的个人博客</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+        .header { text-align: center; padding: 20px; background-color: #f5f5f5; }
+        .post { margin: 20px 0; padding: 15px; border-bottom: 1px solid #ddd; }
+        .post img { max-width: 100%; height: auto; margin: 10px 0; }
+    </style>
 </head>
 <body>
-    <h1>我的 GitHub 博客</h1>
+<div class="header">
+    <h1>我的技术博客</h1>
+    <p>记录学习与成长的点滴</p>
+</div>
 
-    <h2>绝对路径图片（网络）</h2>
-    <img src="https://picsum.photos/500/300" width="500">
+<div class="post">
+    <h2>第一篇：GitHub Pages 初体验</h2>
+    <p>GitHub Pages 是一个非常方便的静态网站托管服务。今天我终于成功部署了自己的第一个博客！</p>
+    <!-- 相对路径图片（图片放在 image 文件夹下） -->
+    <img src="1.jpg" alt="示例图片（相对路径）">
+</div>
 
-    <h2>相对路径图片（本地）</h2>
-    <img src="image/1.png" width="500">
+<div class="post">
+    <h2>第二篇：关于路径的思考</h2>
+    <p>在网页开发中，正确使用路径非常重要。以下是使用绝对路径引用的图片：</p>
+    <!-- 绝对路径图片（使用网络图片地址） -->
+    <img src="https://picsum.photos/id/1/500/300" alt="随机图片（绝对路径）">
+</div>
+
+<div class="footer">
+    <p>© 2025 我的博客 | Powered by GitHub Pages</p>
+</div>
 </body>
 </html>
